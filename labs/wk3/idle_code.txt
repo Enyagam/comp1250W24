@@ -1,0 +1,33 @@
+>>> "ben".upper()
+'BEN'
+>>> "Ben".lower()
+'ben'
+>>> "ben blanc".title()
+'Ben Blanc'
+>>> "ben blanc".find("b")
+0
+>>> "ben blanc".index("b")
+0
+>>> "ben blanc".find("z")
+-1
+>>> "ben blanc".index("z")
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    "ben blanc".index("z")
+ValueError: substring not found
+>>> "ben blanc".isalpha()
+False
+>>> "benblanc".isalpha()
+True
+>>> "ben1blanc".isalnum()
+True
+>>> "ben 1blanc".isalnum()
+False
+>>> "123".isdigit()
+True
+>>> "12 3".isdigit()
+False
+>>> "Ben Blanc".center(15)
+'   Ben Blanc   '
+>>> "Ben Blanc".center(15, "!")
+'!!!Ben Blanc!!!'
