@@ -1,0 +1,155 @@
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> value1 = "ben"
+>>> value2 = list(value1)
+>>> value2
+['b', 'e', 'n']
+>>> value2 += list(" blanc")
+>>> value2
+['b', 'e', 'n', ' ', 'b', 'l', 'a', 'n', 'c']
+>>> a = 10
+>>> a += 1.1
+>>> a
+11.1
+>>> value2
+['b', 'e', 'n', ' ', 'b', 'l', 'a', 'n', 'c']
+>>> value2[5]
+'l'
+>>> value2[-5]
+'b'
+>>> value2[2:7] # what will be the value returned?
+['n', ' ', 'b', 'l', 'a']
+>>> str(value2[2:7])
+"['n', ' ', 'b', 'l', 'a']"
+>>> "".join(value2[2:7])
+'n bla'
+>>> "-".join(value2[2:7])
+'n- -b-l-a'
+>>> # 1-10
+>>> nums1 = list(range(1, 11))
+>>> nums1
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> combine = nums1 + value2
+>>> combine
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'b', 'e', 'n', ' ', 'b', 'l', 'a', 'n', 'c']
+>>> any_data_types = [True, 1.1, 1, "hi", "bye", list(range(2, 6))]
+>>> any_data_types
+[True, 1.1, 1, 'hi', 'bye', [2, 3, 4, 5]]
+>>> nums1.index(4)
+3
+>>> nums1.index(11)
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    nums1.index(11)
+ValueError: 11 is not in list
+>>> 11 in nums1
+False
+>>> 1 in nums1
+True
+>>> "1" in nums1
+False
+>>> nums1.append(11)
+>>> nums1
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+>>> nums1.insert(0, -1)
+>>> nums1
+[-1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+>>> nums1.append(2)
+>>> nums1.count(2)
+2
+>>> nums2.count(10)
+Traceback (most recent call last):
+  File "<pyshell#36>", line 1, in <module>
+    nums2.count(10)
+NameError: name 'nums2' is not defined
+>>> nums1.count(10)
+1
+>>> nums1.remove(55)
+Traceback (most recent call last):
+  File "<pyshell#38>", line 1, in <module>
+    nums1.remove(55)
+ValueError: list.remove(x): x not in list
+>>> nums1.remove(5)
+>>> nums1
+[-1, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 2]
+>>> nums1.pop(5)
+6
+>>> nums1
+[-1, 1, 2, 3, 4, 7, 8, 9, 10, 11, 2]
+>>> nums1[5]
+7
+>>> e1 = list("ben")
+>>> e1
+['b', 'e', 'n']
+>>> e1 *= 2
+>>> e1
+['b', 'e', 'n', 'b', 'e', 'n']
+>>> e1.clear()
+>>> e1
+[]
+>>> del e1
+>>> el
+Traceback (most recent call last):
+  File "<pyshell#51>", line 1, in <module>
+    el
+NameError: name 'el' is not defined
+>>> a
+11.1
+>>> del a
+>>> a
+Traceback (most recent call last):
+  File "<pyshell#54>", line 1, in <module>
+    a
+NameError: name 'a' is not defined
+>>> nums1
+[-1, 1, 2, 3, 4, 7, 8, 9, 10, 11, 2]
+>>> nums1.sort()
+>>> nums1
+[-1, 1, 2, 2, 3, 4, 7, 8, 9, 10, 11]
+>>> value2
+['b', 'e', 'n', ' ', 'b', 'l', 'a', 'n', 'c']
+>>> value3 = value2
+>>> value2.append(1)
+>>> value2
+['b', 'e', 'n', ' ', 'b', 'l', 'a', 'n', 'c', 1]
+>>> value3
+['b', 'e', 'n', ' ', 'b', 'l', 'a', 'n', 'c', 1]
+>>> value4 = value2[0:len(value2)]
+>>> value4
+['b', 'e', 'n', ' ', 'b', 'l', 'a', 'n', 'c', 1]
+>>> value2.append("hi")
+>>> value2
+['b', 'e', 'n', ' ', 'b', 'l', 'a', 'n', 'c', 1, 'hi']
+>>> value4
+['b', 'e', 'n', ' ', 'b', 'l', 'a', 'n', 'c', 1]
+>>> value5 = value4[:]
+>>> value6 = value5.sorted()
+Traceback (most recent call last):
+  File "<pyshell#69>", line 1, in <module>
+    value6 = value5.sorted()
+AttributeError: 'list' object has no attribute 'sorted'
+>>> value6 = sorted(value5)
+Traceback (most recent call last):
+  File "<pyshell#70>", line 1, in <module>
+    value6 = sorted(value5)
+TypeError: '<' not supported between instances of 'int' and 'str'
+>>> value6 = sorted(nums1)
+>>> value6
+[-1, 1, 2, 2, 3, 4, 7, 8, 9, 10, 11]
+>>> nums1[1] = 123 # updates value at index 1
+>>> nums1
+[-1, 123, 2, 2, 3, 4, 7, 8, 9, 10, 11]
+>>> t1 = tuple("ben")
+>>> t1[0]
+'b'
+>>> t1[:2]
+('b', 'e')
+>>> first, second, third = t1
+>>> first
+'b'
+s
+>>> second
+'e'
+>>> third
+'n'
+>>>

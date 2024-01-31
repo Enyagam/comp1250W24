@@ -8,4 +8,10 @@ result1 = "ben 1blanc".isalnum()
 print(result1)
 
 result2 = "Ben Blanc".center(15, "!")
-print(result2)
+print(result2 )
+
+"Hello world" # posiitions of l's
+# 2
+"llo world".find("l", 8)
+
+
