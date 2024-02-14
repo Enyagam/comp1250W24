@@ -1,0 +1,17 @@
+Owner
+    diary
+        milk
+        eggs
+    fruits
+        apple
+        orange
+    dry goods
+        cereal
+        rice
+
+Vendor
+    diary
+
+    veggies
+
+    fruits

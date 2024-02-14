@@ -1,0 +1,24 @@
+Function: self-contained
+Method: attached to an object
+
+len()       str()      round()
+
+lower():    method  string data type "Hello".lower()    NOT 123.lower()   [].lower()
+
+append()
+
+add()       set data type
+
+
+Module: a .py file
+        a file with a specified theme
+            variables
+            methods
+                only
+            missing
+                print statements, input statements
+        have we used modules before?
+            are built-in modules in python
+                random
+                string
+                re
