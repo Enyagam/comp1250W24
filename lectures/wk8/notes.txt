@@ -1,0 +1,44 @@
+RegEX
+    Regular Expressions
+    Advanced way of searching.
+
+    Regular Expressions uses
+    validate:
+            first name contains
+                a-z, -, (space)
+
+    Regular Expressions two components
+        pattern: text that has special meaning used to capture values
+        text: text to search
+
+
+Special Meanings
+    ^       starts with
+            ^hello
+    $       ends in
+            rio$
+
+    [characters]      match any character in brackets
+    [^characters]     match all characters NOT in brackets
+
+    {}              repeat this pattern
+            {N}     exactly this many times
+             {N,M}  between N and M times
+             {N,}   at least N times
+
+     escape character:
+            \           literally this character
+
+    wildcards
+                    .       matches any character
+                    ?       optional character: can exist if does exists, only occurs once
+                    +       repeats one or many times
+                    *       repeats zero or any times
+
+    short character
+                \d          digits/decimals   =>     [0-9]
+                \D          non-digits =>   [^0-9]
+                \w          words       =>  [a-zA-Z0-9_]
+                \W          non-words   =>  [^a-zA-Z0-9_]
+                \s          whitespace  =>  [ \n\r]
+                \S          non-whitespace
