@@ -1,0 +1,12 @@
+reading and writing binary files
+what is a binary file?
+    contains binary data: what kind of files and binary files?
+        anything that you cannot open in Notepad or a plain text editor
+            multi-media files, .docx files, etc
+
+
+CSV files
+    Comma Separated Files
+        read and write tabular data
+            data in rows and columns
+    import csv module
