@@ -1,0 +1,34 @@
+Error Handling
+    Steps to take in case something goes wrong in your code
+    How can something go wrong:
+        Ask for user input
+        Attempt to open a resource (file, database, etc)
+        Attempt to convert
+
+Error Handling does not help with syntax errors
+    Syntax, Logical, Runtime
+    Logical error: math : equation (1 + 3) / 2
+    Runtime: forget to convert, looping issue
+
+How to handle errors
+    When you have code that MAY result in an error,
+    wrap the code in try-except blocks
+    try block => code that MAY result in an error
+        user input, conversion, open a resource
+    except block: what steps/actions to take if the try block
+    statements result in an error
+
+Different Types of Errors
+    TypeError
+        data types
+    ValueError
+        expected value
+    IndexError
+        index of a collection (list, tuples, etc)
+    KeyError
+        dictionary keys
+
+Finally statement
+    runs every time, whether or not there's an error
+Else statement
+    runs only of there is no error
